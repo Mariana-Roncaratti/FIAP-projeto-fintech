@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    background-image: url('finanças.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.login-container {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+.header .logo-container {
+    margin-bottom: 20px;
+}
+
+.header .logo-container img {
+    max-width: 150px;
+}
+
+.login-form h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #b59f3b;
+    padding: 4px;
+}
+
+.login-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #bbb;
+    font-weight: 500;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #555;
+    border-radius: 40px;
+    background-color: #222;
+    color: #fff;
+    font-size: 1em;
+}
+
+.login-form input:focus {
+    border-color: #b59f3b;
+    outline: none;
+}
+
+.login-form button {
+    width: 50%;
+    padding: 12px;
+    border: none;
+    border-radius: 40px;
+    background-color: #b59f3b;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #a58930;
+    transform: scale(1.05);
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    color: #b59f3b;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #a58930;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 0.8em;
+    color: #bbb;
+}
+
+.footer .social-icons {
+    margin-bottom: 10px;
+}
+
+.footer .social-icons a {
+    color: #b59f3b;
+    margin: 0 10px;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #a58930;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        padding: 30px;
+    }
+
+    .header .logo-container img {
+        max-width: 120px;
+    }
+
+    .login-form h2 {
+        font-size: 1.5em;
+    }
+
+    .login-form button {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    .header .logo-container img {
+        max-width: 100px;
+    }
+
+    .login-form h2 {
+        font-size: 1.2em;
+    }
+
+    .login-form button {
+        width: 80%;
+    }
+
+    .links a {
+        font-size: 0.8em;
+    }
+
+    .footer {
+        font-size: 0.7em;
+    }
+
+    .footer .social-icons a {
+        font-size: 1em;
+    }
+}
